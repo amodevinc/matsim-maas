@@ -1,0 +1,778 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE transitSchedule SYSTEM "http://www.matsim.org/files/dtd/transitSchedule_v2.dtd">
+
+<transitSchedule>
+
+	<transitStops>
+		<stopFacility id="VS0001" x="939504.3280658087" y="1912513.5072781409" linkRefId="car_248" name="Unknown Road (southbound)" isBlocking="false">
+			<attributes>
+				<attribute name="accessibility_note" class="java.lang.String">Modified manually</attribute>
+				<attribute name="mapping_distance_m" class="java.lang.Double">15.985792346182224</attribute>
+				<attribute name="pair_id" class="java.lang.String">P0001</attribute>
+				<attribute name="road_direction" class="java.lang.String">southbound</attribute>
+				<attribute name="side_of_road" class="java.lang.String">west</attribute>
+			</attributes>
+
+		</stopFacility>
+		<stopFacility id="VS0002" x="939517.9630367098" y="1912546.9728883926" linkRefId="car_406" name="Unknown Road (southbound)" isBlocking="false">
+			<attributes>
+				<attribute name="accessibility_note" class="java.lang.String">Directly generated from drive network</attribute>
+				<attribute name="mapping_distance_m" class="java.lang.Double">6.832310070291388</attribute>
+				<attribute name="pair_id" class="java.lang.String">P0001</attribute>
+				<attribute name="road_direction" class="java.lang.String">southbound</attribute>
+				<attribute name="side_of_road" class="java.lang.String">east</attribute>
+			</attributes>
+
+		</stopFacility>
+		<stopFacility id="VS0003" x="939641.3005318474" y="1912638.865982119" linkRefId="car_17" name="Unknown Road (westbound)" isBlocking="false">
+			<attributes>
+				<attribute name="accessibility_note" class="java.lang.String">Directly generated from drive network</attribute>
+				<attribute name="mapping_distance_m" class="java.lang.Double">11.988284654519932</attribute>
+				<attribute name="pair_id" class="java.lang.String">P0002</attribute>
+				<attribute name="road_direction" class="java.lang.String">westbound</attribute>
+				<attribute name="side_of_road" class="java.lang.String">north</attribute>
+			</attributes>
+
+		</stopFacility>
+		<stopFacility id="VS0004" x="939652.7074652421" y="1912617.7851577697" linkRefId="car_423" name="Unknown Road (westbound)" isBlocking="false">
+			<attributes>
+				<attribute name="accessibility_note" class="java.lang.String">Directly generated from drive network</attribute>
+				<attribute name="mapping_distance_m" class="java.lang.Double">11.759447694333605</attribute>
+				<attribute name="pair_id" class="java.lang.String">P0002</attribute>
+				<attribute name="road_direction" class="java.lang.String">westbound</attribute>
+				<attribute name="side_of_road" class="java.lang.String">south</attribute>
+			</attributes>
+
+		</stopFacility>
+		<stopFacility id="VS0005" x="939868.6955136283" y="1912742.144132389" linkRefId="car_43" name="Unknown Road (westbound)" isBlocking="false">
+			<attributes>
+				<attribute name="accessibility_note" class="java.lang.String">Directly generated from drive network</attribute>
+				<attribute name="mapping_distance_m" class="java.lang.Double">11.98645200021491</attribute>
+				<attribute name="pair_id" class="java.lang.String">P0003</attribute>
+				<attribute name="road_direction" class="java.lang.String">westbound</attribute>
+				<attribute name="side_of_road" class="java.lang.String">north</attribute>
+			</attributes>
+
+		</stopFacility>
+		<stopFacility id="VS0006" x="939879.1201578592" y="1912720.5649364048" linkRefId="car_448" name="Unknown Road (westbound)" isBlocking="false">
+			<attributes>
+				<attribute name="accessibility_note" class="java.lang.String">Directly generated from drive network</attribute>
+				<attribute name="mapping_distance_m" class="java.lang.Double">11.781831315843165</attribute>
+				<attribute name="pair_id" class="java.lang.String">P0003</attribute>
+				<attribute name="road_direction" class="java.lang.String">westbound</attribute>
+				<attribute name="side_of_road" class="java.lang.String">south</attribute>
+			</attributes>
+
+		</stopFacility>
+		<stopFacility id="VS0007" x="940107.8365425075" y="1912866.7497017658" linkRefId="car_72" name="Unknown Road (westbound)" isBlocking="false">
+			<attributes>
+				<attribute name="accessibility_note" class="java.lang.String">Directly generated from drive network</attribute>
+				<attribute name="mapping_distance_m" class="java.lang.Double">11.986755676024057</attribute>
+				<attribute name="pair_id" class="java.lang.String">P0004</attribute>
+				<attribute name="road_direction" class="java.lang.String">westbound</attribute>
+				<attribute name="side_of_road" class="java.lang.String">north</attribute>
+			</attributes>
+
+		</stopFacility>
+		<stopFacility id="VS0008" x="940118.432105683" y="1912845.2532024775" linkRefId="car_607" name="Unknown Road (westbound)" isBlocking="false">
+			<attributes>
+				<attribute name="accessibility_note" class="java.lang.String">Directly generated from drive network</attribute>
+				<attribute name="mapping_distance_m" class="java.lang.Double">10.957069852923354</attribute>
+				<attribute name="pair_id" class="java.lang.String">P0004</attribute>
+				<attribute name="road_direction" class="java.lang.String">westbound</attribute>
+				<attribute name="side_of_road" class="java.lang.String">south</attribute>
+			</attributes>
+
+		</stopFacility>
+		<stopFacility id="VS0009" x="940261.4833633711" y="1912944.5499472325" linkRefId="car_89" name="Unknown Road (westbound)" isBlocking="false">
+			<attributes>
+				<attribute name="accessibility_note" class="java.lang.String">Modified manually</attribute>
+				<attribute name="mapping_distance_m" class="java.lang.Double">8.026442208108337</attribute>
+				<attribute name="pair_id" class="java.lang.String">P0005</attribute>
+				<attribute name="road_direction" class="java.lang.String">westbound</attribute>
+				<attribute name="side_of_road" class="java.lang.String">north</attribute>
+			</attributes>
+
+		</stopFacility>
+		<stopFacility id="VS0010" x="940259.7233724776" y="1912921.3302903534" linkRefId="car_623" name="Unknown Road (westbound)" isBlocking="false">
+			<attributes>
+				<attribute name="accessibility_note" class="java.lang.String">Directly generated from drive network</attribute>
+				<attribute name="mapping_distance_m" class="java.lang.Double">10.944836983968369</attribute>
+				<attribute name="pair_id" class="java.lang.String">P0005</attribute>
+				<attribute name="road_direction" class="java.lang.String">westbound</attribute>
+				<attribute name="side_of_road" class="java.lang.String">south</attribute>
+			</attributes>
+
+		</stopFacility>
+		<stopFacility id="VS0011" x="940387.2104044091" y="1913020.626255887" linkRefId="car_104" name="Unknown Road (westbound)" isBlocking="false">
+			<attributes>
+				<attribute name="accessibility_note" class="java.lang.String">Directly generated from drive network</attribute>
+				<attribute name="mapping_distance_m" class="java.lang.Double">11.989716821345263</attribute>
+				<attribute name="pair_id" class="java.lang.String">P0006</attribute>
+				<attribute name="road_direction" class="java.lang.String">westbound</attribute>
+				<attribute name="side_of_road" class="java.lang.String">north</attribute>
+			</attributes>
+
+		</stopFacility>
+		<stopFacility id="VS0012" x="940399.33809713" y="1912999.948185069" linkRefId="car_639" name="Unknown Road (westbound)" isBlocking="false">
+			<attributes>
+				<attribute name="accessibility_note" class="java.lang.String">Directly generated from drive network</attribute>
+				<attribute name="mapping_distance_m" class="java.lang.Double">10.939336413283408</attribute>
+				<attribute name="pair_id" class="java.lang.String">P0006</attribute>
+				<attribute name="road_direction" class="java.lang.String">westbound</attribute>
+				<attribute name="side_of_road" class="java.lang.String">south</attribute>
+			</attributes>
+
+		</stopFacility>
+		<stopFacility id="VS0013" x="940583.0635902632" y="1913140.3681496421" linkRefId="car_128" name="Unknown Road (westbound)" isBlocking="false">
+			<attributes>
+				<attribute name="accessibility_note" class="java.lang.String">Directly generated from drive network</attribute>
+				<attribute name="mapping_distance_m" class="java.lang.Double">11.990876912260738</attribute>
+				<attribute name="pair_id" class="java.lang.String">P0007</attribute>
+				<attribute name="road_direction" class="java.lang.String">westbound</attribute>
+				<attribute name="side_of_road" class="java.lang.String">north</attribute>
+			</attributes>
+
+		</stopFacility>
+		<stopFacility id="VS0014" x="940595.7435363813" y="1913120.0211724709" linkRefId="car_663" name="Unknown Road (westbound)" isBlocking="false">
+			<attributes>
+				<attribute name="accessibility_note" class="java.lang.String">Directly generated from drive network</attribute>
+				<attribute name="mapping_distance_m" class="java.lang.Double">10.93416390711602</attribute>
+				<attribute name="pair_id" class="java.lang.String">P0007</attribute>
+				<attribute name="road_direction" class="java.lang.String">westbound</attribute>
+				<attribute name="side_of_road" class="java.lang.String">south</attribute>
+			</attributes>
+
+		</stopFacility>
+		<stopFacility id="VS0015" x="940733.3117888869" y="1913114.883360043" linkRefId="car_167" name="Unknown Road (southbound)" isBlocking="false">
+			<attributes>
+				<attribute name="accessibility_note" class="java.lang.String">Directly generated from drive network</attribute>
+				<attribute name="mapping_distance_m" class="java.lang.Double">12.02334504175222</attribute>
+				<attribute name="pair_id" class="java.lang.String">P0008</attribute>
+				<attribute name="road_direction" class="java.lang.String">southbound</attribute>
+				<attribute name="side_of_road" class="java.lang.String">west</attribute>
+			</attributes>
+
+		</stopFacility>
+		<stopFacility id="VS0017" x="940742.6866616124" y="1912965.248630928" linkRefId="car_182" name="Unknown Road (southbound)" isBlocking="false">
+			<attributes>
+				<attribute name="accessibility_note" class="java.lang.String">Directly generated from drive network</attribute>
+				<attribute name="mapping_distance_m" class="java.lang.Double">12.023353898839893</attribute>
+				<attribute name="pair_id" class="java.lang.String">P0009</attribute>
+				<attribute name="road_direction" class="java.lang.String">southbound</attribute>
+				<attribute name="side_of_road" class="java.lang.String">west</attribute>
+			</attributes>
+
+		</stopFacility>
+		<stopFacility id="VS0018" x="940786.3768265824" y="1912975.2287260455" linkRefId="car_1192" name="Unknown Road (southbound)" isBlocking="false">
+			<attributes>
+				<attribute name="accessibility_note" class="java.lang.String">Modified manually</attribute>
+				<attribute name="mapping_distance_m" class="java.lang.Double">8.254244102306243</attribute>
+				<attribute name="pair_id" class="java.lang.String">P0009</attribute>
+				<attribute name="road_direction" class="java.lang.String">southbound</attribute>
+				<attribute name="side_of_road" class="java.lang.String">east</attribute>
+			</attributes>
+
+		</stopFacility>
+		<stopFacility id="VS0019" x="940755.6657682506" y="1912847.9695564876" linkRefId="car_194" name="Unknown Road (southbound)" isBlocking="false">
+			<attributes>
+				<attribute name="accessibility_note" class="java.lang.String">Modfiied manually</attribute>
+				<attribute name="mapping_distance_m" class="java.lang.Double">6.7031171512354675</attribute>
+				<attribute name="pair_id" class="java.lang.String">P0010</attribute>
+				<attribute name="road_direction" class="java.lang.String">southbound</attribute>
+				<attribute name="side_of_road" class="java.lang.String">west</attribute>
+			</attributes>
+
+		</stopFacility>
+		<stopFacility id="VS0020" x="940795.1221286706" y="1912755.4964477571" linkRefId="car_1169" name="Unknown Road (southbound)" isBlocking="false">
+			<attributes>
+				<attribute name="accessibility_note" class="java.lang.String">Modified manually</attribute>
+				<attribute name="mapping_distance_m" class="java.lang.Double">14.819661876290112</attribute>
+				<attribute name="pair_id" class="java.lang.String">P0010</attribute>
+				<attribute name="road_direction" class="java.lang.String">southbound</attribute>
+				<attribute name="side_of_road" class="java.lang.String">east</attribute>
+			</attributes>
+
+		</stopFacility>
+		<stopFacility id="VS0021" x="940772.4728577118" y="1912648.1979200768" linkRefId="car_214" name="Unknown Road (southbound)" isBlocking="false">
+			<attributes>
+				<attribute name="accessibility_note" class="java.lang.String">Directly generated from drive network</attribute>
+				<attribute name="mapping_distance_m" class="java.lang.Double">12.023534579583389</attribute>
+				<attribute name="pair_id" class="java.lang.String">P0011</attribute>
+				<attribute name="road_direction" class="java.lang.String">southbound</attribute>
+				<attribute name="side_of_road" class="java.lang.String">west</attribute>
+			</attributes>
+
+		</stopFacility>
+		<stopFacility id="VS0022" x="940796.497052859" y="1912649.2563636317" linkRefId="car_1159" name="Unknown Road (southbound)" isBlocking="false">
+			<attributes>
+				<attribute name="accessibility_note" class="java.lang.String">Directly generated from drive network</attribute>
+				<attribute name="mapping_distance_m" class="java.lang.Double">10.006596473176716</attribute>
+				<attribute name="pair_id" class="java.lang.String">P0011</attribute>
+				<attribute name="road_direction" class="java.lang.String">southbound</attribute>
+				<attribute name="side_of_road" class="java.lang.String">east</attribute>
+			</attributes>
+
+		</stopFacility>
+		<stopFacility id="VS0023" x="939549.818787435" y="1912390.6019364493" linkRefId="car_261" name="Unknown Road (southbound)" isBlocking="false">
+			<attributes>
+				<attribute name="accessibility_note" class="java.lang.String">Directly generated from drive network</attribute>
+				<attribute name="mapping_distance_m" class="java.lang.Double">12.017219969938806</attribute>
+				<attribute name="pair_id" class="java.lang.String">P0012</attribute>
+				<attribute name="road_direction" class="java.lang.String">southbound</attribute>
+				<attribute name="side_of_road" class="java.lang.String">west</attribute>
+			</attributes>
+
+		</stopFacility>
+		<stopFacility id="VS0024" x="939572.6343605114" y="1912398.1673084162" linkRefId="car_389" name="Unknown Road (southbound)" isBlocking="false">
+			<attributes>
+				<attribute name="accessibility_note" class="java.lang.String">Directly generated from drive network</attribute>
+				<attribute name="mapping_distance_m" class="java.lang.Double">10.036274855583057</attribute>
+				<attribute name="pair_id" class="java.lang.String">P0012</attribute>
+				<attribute name="road_direction" class="java.lang.String">southbound</attribute>
+				<attribute name="side_of_road" class="java.lang.String">east</attribute>
+			</attributes>
+
+		</stopFacility>
+		<stopFacility id="VS0025" x="939604.4306190843" y="1912249.7532059576" linkRefId="car_276" name="Unknown Road (southbound)" isBlocking="false">
+			<attributes>
+				<attribute name="accessibility_note" class="java.lang.String">Directly generated from drive network</attribute>
+				<attribute name="mapping_distance_m" class="java.lang.Double">12.012933179028899</attribute>
+				<attribute name="pair_id" class="java.lang.String">P0013</attribute>
+				<attribute name="road_direction" class="java.lang.String">southbound</attribute>
+				<attribute name="side_of_road" class="java.lang.String">west</attribute>
+			</attributes>
+
+		</stopFacility>
+		<stopFacility id="VS0026" x="939626.2836478008" y="1912259.74617184" linkRefId="car_374" name="Unknown Road (southbound)" isBlocking="false">
+			<attributes>
+				<attribute name="accessibility_note" class="java.lang.String">Directly generated from drive network</attribute>
+				<attribute name="mapping_distance_m" class="java.lang.Double">9.981509985109811</attribute>
+				<attribute name="pair_id" class="java.lang.String">P0013</attribute>
+				<attribute name="road_direction" class="java.lang.String">southbound</attribute>
+				<attribute name="side_of_road" class="java.lang.String">east</attribute>
+			</attributes>
+
+		</stopFacility>
+		<stopFacility id="VS0027" x="939687.6131383617" y="1912110.4884457043" linkRefId="car_293" name="Unknown Road (southbound)" isBlocking="false">
+			<attributes>
+				<attribute name="accessibility_note" class="java.lang.String">Directly generated from drive network</attribute>
+				<attribute name="mapping_distance_m" class="java.lang.Double">12.002191883735538</attribute>
+				<attribute name="pair_id" class="java.lang.String">P0014</attribute>
+				<attribute name="road_direction" class="java.lang.String">southbound</attribute>
+				<attribute name="side_of_road" class="java.lang.String">west</attribute>
+			</attributes>
+
+		</stopFacility>
+		<stopFacility id="VS0028" x="939706.7430579108" y="1912124.9972334239" linkRefId="car_357" name="Unknown Road (southbound)" isBlocking="false">
+			<attributes>
+				<attribute name="accessibility_note" class="java.lang.String">Directly generated from drive network</attribute>
+				<attribute name="mapping_distance_m" class="java.lang.Double">9.939286693475688</attribute>
+				<attribute name="pair_id" class="java.lang.String">P0014</attribute>
+				<attribute name="road_direction" class="java.lang.String">southbound</attribute>
+				<attribute name="side_of_road" class="java.lang.String">east</attribute>
+			</attributes>
+
+		</stopFacility>
+		<stopFacility id="VS0029" x="939788.0767714852" y="1911985.3501154515" linkRefId="car_310" name="Unknown Road (southbound)" isBlocking="false">
+			<attributes>
+				<attribute name="accessibility_note" class="java.lang.String">Directly generated from drive network</attribute>
+				<attribute name="mapping_distance_m" class="java.lang.Double">11.9995448937053</attribute>
+				<attribute name="pair_id" class="java.lang.String">P0015</attribute>
+				<attribute name="road_direction" class="java.lang.String">southbound</attribute>
+				<attribute name="side_of_road" class="java.lang.String">west</attribute>
+			</attributes>
+
+		</stopFacility>
+		<stopFacility id="VS0030" x="939806.4614554788" y="1912000.7846104468" linkRefId="car_340" name="Unknown Road (southbound)" isBlocking="false">
+			<attributes>
+				<attribute name="accessibility_note" class="java.lang.String">Directly generated from drive network</attribute>
+				<attribute name="mapping_distance_m" class="java.lang.Double">9.947774208496405</attribute>
+				<attribute name="pair_id" class="java.lang.String">P0015</attribute>
+				<attribute name="road_direction" class="java.lang.String">southbound</attribute>
+				<attribute name="side_of_road" class="java.lang.String">east</attribute>
+			</attributes>
+
+		</stopFacility>
+		<stopFacility id="VS0031" x="939923.5758411568" y="1911929.8768641043" linkRefId="car_479" name="Unknown Road (westbound)" isBlocking="false">
+			<attributes>
+				<attribute name="accessibility_note" class="java.lang.String">Directly generated from drive network</attribute>
+				<attribute name="mapping_distance_m" class="java.lang.Double">11.99571926084523</attribute>
+				<attribute name="pair_id" class="java.lang.String">P0016</attribute>
+				<attribute name="road_direction" class="java.lang.String">westbound</attribute>
+				<attribute name="side_of_road" class="java.lang.String">north</attribute>
+			</attributes>
+
+		</stopFacility>
+		<stopFacility id="VS0032" x="939938.3457086077" y="1911910.9792137768" linkRefId="car_830" name="Unknown Road (westbound)" isBlocking="false">
+			<attributes>
+				<attribute name="accessibility_note" class="java.lang.String">Directly generated from drive network</attribute>
+				<attribute name="mapping_distance_m" class="java.lang.Double">11.425017837035636</attribute>
+				<attribute name="pair_id" class="java.lang.String">P0016</attribute>
+				<attribute name="road_direction" class="java.lang.String">westbound</attribute>
+				<attribute name="side_of_road" class="java.lang.String">south</attribute>
+			</attributes>
+
+		</stopFacility>
+		<stopFacility id="VS0033" x="940089.0593357803" y="1912058.8042577596" linkRefId="car_501" name="Unknown Road (westbound)" isBlocking="false">
+			<attributes>
+				<attribute name="accessibility_note" class="java.lang.String">Directly generated from drive network</attribute>
+				<attribute name="mapping_distance_m" class="java.lang.Double">11.996238758676046</attribute>
+				<attribute name="pair_id" class="java.lang.String">P0017</attribute>
+				<attribute name="road_direction" class="java.lang.String">westbound</attribute>
+				<attribute name="side_of_road" class="java.lang.String">north</attribute>
+			</attributes>
+
+		</stopFacility>
+		<stopFacility id="VS0034" x="940104.0376074311" y="1912040.0699524519" linkRefId="car_852" name="Unknown Road (westbound)" isBlocking="false">
+			<attributes>
+				<attribute name="accessibility_note" class="java.lang.String">Directly generated from drive network</attribute>
+				<attribute name="mapping_distance_m" class="java.lang.Double">11.426421312805774</attribute>
+				<attribute name="pair_id" class="java.lang.String">P0017</attribute>
+				<attribute name="road_direction" class="java.lang.String">westbound</attribute>
+				<attribute name="side_of_road" class="java.lang.String">south</attribute>
+			</attributes>
+
+		</stopFacility>
+		<stopFacility id="VS0035" x="940214.0506535796" y="1912158.415792678" linkRefId="car_517" name="Unknown Road (westbound)" isBlocking="false">
+			<attributes>
+				<attribute name="accessibility_note" class="java.lang.String">Directly generated from drive network</attribute>
+				<attribute name="mapping_distance_m" class="java.lang.Double">11.99664723882348</attribute>
+				<attribute name="pair_id" class="java.lang.String">P0018</attribute>
+				<attribute name="road_direction" class="java.lang.String">westbound</attribute>
+				<attribute name="side_of_road" class="java.lang.String">north</attribute>
+			</attributes>
+
+		</stopFacility>
+		<stopFacility id="VS0036" x="940229.1908756724" y="1912139.8110108676" linkRefId="car_868" name="Unknown Road (westbound)" isBlocking="false">
+			<attributes>
+				<attribute name="accessibility_note" class="java.lang.String">Directly generated from drive network</attribute>
+				<attribute name="mapping_distance_m" class="java.lang.Double">11.428705559593629</attribute>
+				<attribute name="pair_id" class="java.lang.String">P0018</attribute>
+				<attribute name="road_direction" class="java.lang.String">westbound</attribute>
+				<attribute name="side_of_road" class="java.lang.String">south</attribute>
+			</attributes>
+
+		</stopFacility>
+		<stopFacility id="VS0037" x="940361.5521165658" y="1912330.0611300066" linkRefId="car_542" name="Unknown Road (northbound)" isBlocking="false">
+			<attributes>
+				<attribute name="accessibility_note" class="java.lang.String">Directly generated from drive network</attribute>
+				<attribute name="mapping_distance_m" class="java.lang.Double">12.007288784398071</attribute>
+				<attribute name="pair_id" class="java.lang.String">P0019</attribute>
+				<attribute name="road_direction" class="java.lang.String">northbound</attribute>
+				<attribute name="side_of_road" class="java.lang.String">east</attribute>
+			</attributes>
+
+		</stopFacility>
+		<stopFacility id="VS0038" x="940342.4442794044" y="1912315.523538327" linkRefId="car_997" name="Unknown Road (northbound)" isBlocking="false">
+			<attributes>
+				<attribute name="accessibility_note" class="java.lang.String">Directly generated from drive network</attribute>
+				<attribute name="mapping_distance_m" class="java.lang.Double">11.642580461996296</attribute>
+				<attribute name="pair_id" class="java.lang.String">P0019</attribute>
+				<attribute name="road_direction" class="java.lang.String">northbound</attribute>
+				<attribute name="side_of_road" class="java.lang.String">west</attribute>
+			</attributes>
+
+		</stopFacility>
+		<stopFacility id="VS0039" x="940271.0454129362" y="1912449.4321944404" linkRefId="car_557" name="Unknown Road (northbound)" isBlocking="false">
+			<attributes>
+				<attribute name="accessibility_note" class="java.lang.String">Directly generated from drive network</attribute>
+				<attribute name="mapping_distance_m" class="java.lang.Double">12.007808463228095</attribute>
+				<attribute name="pair_id" class="java.lang.String">P0020</attribute>
+				<attribute name="road_direction" class="java.lang.String">northbound</attribute>
+				<attribute name="side_of_road" class="java.lang.String">east</attribute>
+			</attributes>
+
+		</stopFacility>
+		<stopFacility id="VS0040" x="940251.7746865252" y="1912435.1093576085" linkRefId="car_982" name="Unknown Road (northbound)" isBlocking="false">
+			<attributes>
+				<attribute name="accessibility_note" class="java.lang.String">Directly generated from drive network</attribute>
+				<attribute name="mapping_distance_m" class="java.lang.Double">11.655280525050914</attribute>
+				<attribute name="pair_id" class="java.lang.String">P0020</attribute>
+				<attribute name="road_direction" class="java.lang.String">northbound</attribute>
+				<attribute name="side_of_road" class="java.lang.String">west</attribute>
+			</attributes>
+
+		</stopFacility>
+		<stopFacility id="VS0041" x="940199.8275260231" y="1912588.5558763" linkRefId="car_573" name="Unknown Road (northbound)" isBlocking="false">
+			<attributes>
+				<attribute name="accessibility_note" class="java.lang.String">Directly generated from drive network</attribute>
+				<attribute name="mapping_distance_m" class="java.lang.Double">12.01725611967356</attribute>
+				<attribute name="pair_id" class="java.lang.String">P0021</attribute>
+				<attribute name="road_direction" class="java.lang.String">northbound</attribute>
+				<attribute name="side_of_road" class="java.lang.String">east</attribute>
+			</attributes>
+
+		</stopFacility>
+		<stopFacility id="VS0042" x="940177.7630802258" y="1912579.034643347" linkRefId="car_966" name="Unknown Road (northbound)" isBlocking="false">
+			<attributes>
+				<attribute name="accessibility_note" class="java.lang.String">Directly generated from drive network</attribute>
+				<attribute name="mapping_distance_m" class="java.lang.Double">11.802177965662251</attribute>
+				<attribute name="pair_id" class="java.lang.String">P0021</attribute>
+				<attribute name="road_direction" class="java.lang.String">northbound</attribute>
+				<attribute name="side_of_road" class="java.lang.String">west</attribute>
+			</attributes>
+
+		</stopFacility>
+		<stopFacility id="VS0043" x="939968.6690169218" y="1911764.8565605967" linkRefId="car_696" name="Unknown Road (southbound)" isBlocking="false">
+			<attributes>
+				<attribute name="accessibility_note" class="java.lang.String">Directly generated from drive network</attribute>
+				<attribute name="mapping_distance_m" class="java.lang.Double">12.000720469792885</attribute>
+				<attribute name="pair_id" class="java.lang.String">P0022</attribute>
+				<attribute name="road_direction" class="java.lang.String">southbound</attribute>
+				<attribute name="side_of_road" class="java.lang.String">west</attribute>
+			</attributes>
+
+		</stopFacility>
+		<stopFacility id="VS0044" x="939987.3902974479" y="1911779.8845299815" linkRefId="car_808" name="Unknown Road (southbound)" isBlocking="false">
+			<attributes>
+				<attribute name="accessibility_note" class="java.lang.String">Directly generated from drive network</attribute>
+				<attribute name="mapping_distance_m" class="java.lang.Double">10.37893979044717</attribute>
+				<attribute name="pair_id" class="java.lang.String">P0022</attribute>
+				<attribute name="road_direction" class="java.lang.String">southbound</attribute>
+				<attribute name="side_of_road" class="java.lang.String">east</attribute>
+			</attributes>
+
+		</stopFacility>
+		<stopFacility id="VS0045" x="940120.7664327599" y="1911578.9727131457" linkRefId="car_721" name="Unknown Road (southbound)" isBlocking="false">
+			<attributes>
+				<attribute name="accessibility_note" class="java.lang.String">Directly generated from drive network</attribute>
+				<attribute name="mapping_distance_m" class="java.lang.Double">11.999406583108557</attribute>
+				<attribute name="pair_id" class="java.lang.String">P0023</attribute>
+				<attribute name="road_direction" class="java.lang.String">southbound</attribute>
+				<attribute name="side_of_road" class="java.lang.String">west</attribute>
+			</attributes>
+
+		</stopFacility>
+		<stopFacility id="VS0046" x="940139.1135029419" y="1911594.4514949853" linkRefId="car_783" name="Unknown Road (southbound)" isBlocking="false">
+			<attributes>
+				<attribute name="accessibility_note" class="java.lang.String">Directly generated from drive network</attribute>
+				<attribute name="mapping_distance_m" class="java.lang.Double">10.382329640239737</attribute>
+				<attribute name="pair_id" class="java.lang.String">P0023</attribute>
+				<attribute name="road_direction" class="java.lang.String">southbound</attribute>
+				<attribute name="side_of_road" class="java.lang.String">east</attribute>
+			</attributes>
+
+		</stopFacility>
+		<stopFacility id="VS0047" x="940236.0288089577" y="1911435.6595640522" linkRefId="car_739" name="Unknown Road (southbound)" isBlocking="false">
+			<attributes>
+				<attribute name="accessibility_note" class="java.lang.String">Modified manually</attribute>
+				<attribute name="mapping_distance_m" class="java.lang.Double">17.014177067754648</attribute>
+				<attribute name="pair_id" class="java.lang.String">P0024</attribute>
+				<attribute name="road_direction" class="java.lang.String">southbound</attribute>
+				<attribute name="side_of_road" class="java.lang.String">west</attribute>
+			</attributes>
+
+		</stopFacility>
+		<stopFacility id="VS0048" x="940259.8654133684" y="1911455.4602406565" linkRefId="car_765" name="Unknown Road (southbound)" isBlocking="false">
+			<attributes>
+				<attribute name="accessibility_note" class="java.lang.String">Modified manually</attribute>
+				<attribute name="mapping_distance_m" class="java.lang.Double">12.533365045271035</attribute>
+				<attribute name="pair_id" class="java.lang.String">P0024</attribute>
+				<attribute name="road_direction" class="java.lang.String">southbound</attribute>
+				<attribute name="side_of_road" class="java.lang.String">east</attribute>
+			</attributes>
+
+		</stopFacility>
+		<stopFacility id="VS0049" x="940488.8502069496" y="1912385.1501268342" linkRefId="car_909" name="Unknown Road (westbound)" isBlocking="false">
+			<attributes>
+				<attribute name="accessibility_note" class="java.lang.String">Directly generated from drive network</attribute>
+				<attribute name="mapping_distance_m" class="java.lang.Double">11.996824668581226</attribute>
+				<attribute name="pair_id" class="java.lang.String">P0025</attribute>
+				<attribute name="road_direction" class="java.lang.String">westbound</attribute>
+				<attribute name="side_of_road" class="java.lang.String">north</attribute>
+			</attributes>
+
+		</stopFacility>
+		<stopFacility id="VS0050" x="940504.0612451154" y="1912366.6027136573" linkRefId="car_1510" name="Unknown Road (westbound)" isBlocking="false">
+			<attributes>
+				<attribute name="accessibility_note" class="java.lang.String">Directly generated from drive network</attribute>
+				<attribute name="mapping_distance_m" class="java.lang.Double">11.211462548529013</attribute>
+				<attribute name="pair_id" class="java.lang.String">P0025</attribute>
+				<attribute name="road_direction" class="java.lang.String">westbound</attribute>
+				<attribute name="side_of_road" class="java.lang.String">south</attribute>
+			</attributes>
+
+		</stopFacility>
+		<stopFacility id="VS0051" x="940702.2749561216" y="1912477.5786490713" linkRefId="car_933" name="Unknown Road (westbound)" isBlocking="false">
+			<attributes>
+				<attribute name="accessibility_note" class="java.lang.String">Directly generated from drive network</attribute>
+				<attribute name="mapping_distance_m" class="java.lang.Double">11.978464747221931</attribute>
+				<attribute name="pair_id" class="java.lang.String">P0026</attribute>
+				<attribute name="road_direction" class="java.lang.String">westbound</attribute>
+				<attribute name="side_of_road" class="java.lang.String">north</attribute>
+			</attributes>
+
+		</stopFacility>
+		<stopFacility id="VS0052" x="940706.3327673682" y="1912453.976357623" linkRefId="car_1534" name="Unknown Road (westbound)" isBlocking="false">
+			<attributes>
+				<attribute name="accessibility_note" class="java.lang.String">Directly generated from drive network</attribute>
+				<attribute name="mapping_distance_m" class="java.lang.Double">11.039625047887744</attribute>
+				<attribute name="pair_id" class="java.lang.String">P0026</attribute>
+				<attribute name="road_direction" class="java.lang.String">westbound</attribute>
+				<attribute name="side_of_road" class="java.lang.String">south</attribute>
+			</attributes>
+
+		</stopFacility>
+		<stopFacility id="VS0053" x="940357.535676141" y="1911392.5957481756" linkRefId="car_1010" name="Unknown Road (westbound)" isBlocking="false">
+			<attributes>
+				<attribute name="accessibility_note" class="java.lang.String">Directly generated from drive network</attribute>
+				<attribute name="mapping_distance_m" class="java.lang.Double">11.995916377694348</attribute>
+				<attribute name="pair_id" class="java.lang.String">P0027</attribute>
+				<attribute name="road_direction" class="java.lang.String">westbound</attribute>
+				<attribute name="side_of_road" class="java.lang.String">north</attribute>
+			</attributes>
+
+		</stopFacility>
+		<stopFacility id="VS0054" x="940372.3917748785" y="1911373.7652780688" linkRefId="car_1216" name="Unknown Road (westbound)" isBlocking="false">
+			<attributes>
+				<attribute name="accessibility_note" class="java.lang.String">Directly generated from drive network</attribute>
+				<attribute name="mapping_distance_m" class="java.lang.Double">11.293626816057726</attribute>
+				<attribute name="pair_id" class="java.lang.String">P0027</attribute>
+				<attribute name="road_direction" class="java.lang.String">westbound</attribute>
+				<attribute name="side_of_road" class="java.lang.String">south</attribute>
+			</attributes>
+
+		</stopFacility>
+		<stopFacility id="VS0061" x="940831.8577580939" y="1911811.8768257813" linkRefId="car_1074" name="Unknown Road (southbound)" isBlocking="false">
+			<attributes>
+				<attribute name="accessibility_note" class="java.lang.String">Directly generated from drive network</attribute>
+				<attribute name="mapping_distance_m" class="java.lang.Double">12.013622781982072</attribute>
+				<attribute name="pair_id" class="java.lang.String">P0031</attribute>
+				<attribute name="road_direction" class="java.lang.String">southbound</attribute>
+				<attribute name="side_of_road" class="java.lang.String">west</attribute>
+			</attributes>
+
+		</stopFacility>
+		<stopFacility id="VS0062" x="940852.7212181743" y="1911799.9677921885" linkRefId="car_1280" name="Unknown Road (southbound)" isBlocking="false">
+			<attributes>
+				<attribute name="accessibility_note" class="java.lang.String">Directly generated from drive network</attribute>
+				<attribute name="mapping_distance_m" class="java.lang.Double">10.592327483404981</attribute>
+				<attribute name="pair_id" class="java.lang.String">P0031</attribute>
+				<attribute name="road_direction" class="java.lang.String">southbound</attribute>
+				<attribute name="side_of_road" class="java.lang.String">east</attribute>
+			</attributes>
+
+		</stopFacility>
+		<stopFacility id="VS0063" x="940868.5850027647" y="1911958.629321285" linkRefId="car_1090" name="Unknown Road (southbound)" isBlocking="false">
+			<attributes>
+				<attribute name="accessibility_note" class="java.lang.String">Directly generated from drive network</attribute>
+				<attribute name="mapping_distance_m" class="java.lang.Double">12.023645089315535</attribute>
+				<attribute name="pair_id" class="java.lang.String">P0032</attribute>
+				<attribute name="road_direction" class="java.lang.String">southbound</attribute>
+				<attribute name="side_of_road" class="java.lang.String">west</attribute>
+			</attributes>
+
+		</stopFacility>
+		<stopFacility id="VS0064" x="940892.6211871462" y="1911959.370497581" linkRefId="car_1296" name="Unknown Road (southbound)" isBlocking="false">
+			<attributes>
+				<attribute name="accessibility_note" class="java.lang.String">Directly generated from drive network</attribute>
+				<attribute name="mapping_distance_m" class="java.lang.Double">9.966389217420398</attribute>
+				<attribute name="pair_id" class="java.lang.String">P0032</attribute>
+				<attribute name="road_direction" class="java.lang.String">southbound</attribute>
+				<attribute name="side_of_road" class="java.lang.String">east</attribute>
+			</attributes>
+
+		</stopFacility>
+		<stopFacility id="VS0065" x="940844.838449591" y="1912145.4054667386" linkRefId="car_1109" name="Unknown Road (southbound)" isBlocking="false">
+			<attributes>
+				<attribute name="accessibility_note" class="java.lang.String">Directly generated from drive network</attribute>
+				<attribute name="mapping_distance_m" class="java.lang.Double">12.021749181413094</attribute>
+				<attribute name="pair_id" class="java.lang.String">P0033</attribute>
+				<attribute name="road_direction" class="java.lang.String">southbound</attribute>
+				<attribute name="side_of_road" class="java.lang.String">west</attribute>
+			</attributes>
+
+		</stopFacility>
+		<stopFacility id="VS0066" x="940868.5755976386" y="1912149.2402212487" linkRefId="car_1315" name="Unknown Road (southbound)" isBlocking="false">
+			<attributes>
+				<attribute name="accessibility_note" class="java.lang.String">Directly generated from drive network</attribute>
+				<attribute name="mapping_distance_m" class="java.lang.Double">9.908427777745182</attribute>
+				<attribute name="pair_id" class="java.lang.String">P0033</attribute>
+				<attribute name="road_direction" class="java.lang.String">southbound</attribute>
+				<attribute name="side_of_road" class="java.lang.String">east</attribute>
+			</attributes>
+
+		</stopFacility>
+		<stopFacility id="VS0067" x="940820.6567945869" y="1912293.3699774244" linkRefId="car_1124" name="Unknown Road (southbound)" isBlocking="false">
+			<attributes>
+				<attribute name="accessibility_note" class="java.lang.String">Directly generated from drive network</attribute>
+				<attribute name="mapping_distance_m" class="java.lang.Double">12.021732651764639</attribute>
+				<attribute name="pair_id" class="java.lang.String">P0034</attribute>
+				<attribute name="road_direction" class="java.lang.String">southbound</attribute>
+				<attribute name="side_of_road" class="java.lang.String">west</attribute>
+			</attributes>
+
+		</stopFacility>
+		<stopFacility id="VS0068" x="940844.3906740954" y="1912297.224747975" linkRefId="car_1330" name="Unknown Road (southbound)" isBlocking="false">
+			<attributes>
+				<attribute name="accessibility_note" class="java.lang.String">Directly generated from drive network</attribute>
+				<attribute name="mapping_distance_m" class="java.lang.Double">9.912581839993653</attribute>
+				<attribute name="pair_id" class="java.lang.String">P0034</attribute>
+				<attribute name="road_direction" class="java.lang.String">southbound</attribute>
+				<attribute name="side_of_road" class="java.lang.String">east</attribute>
+			</attributes>
+
+		</stopFacility>
+		<stopFacility id="VS0069" x="940900.4291798656" y="1912511.863819864" linkRefId="car_1364" name="Unknown Road (westbound)" isBlocking="false">
+			<attributes>
+				<attribute name="accessibility_note" class="java.lang.String">Directly generated from drive network</attribute>
+				<attribute name="mapping_distance_m" class="java.lang.Double">11.978447101144361</attribute>
+				<attribute name="pair_id" class="java.lang.String">P0035</attribute>
+				<attribute name="road_direction" class="java.lang.String">westbound</attribute>
+				<attribute name="side_of_road" class="java.lang.String">north</attribute>
+			</attributes>
+
+		</stopFacility>
+		<stopFacility id="VS0070" x="940904.466750542" y="1912488.2580947247" linkRefId="car_1556" name="Unknown Road (westbound)" isBlocking="false">
+			<attributes>
+				<attribute name="accessibility_note" class="java.lang.String">Directly generated from drive network</attribute>
+				<attribute name="mapping_distance_m" class="java.lang.Double">11.192491238671646</attribute>
+				<attribute name="pair_id" class="java.lang.String">P0035</attribute>
+				<attribute name="road_direction" class="java.lang.String">westbound</attribute>
+				<attribute name="side_of_road" class="java.lang.String">south</attribute>
+			</attributes>
+
+		</stopFacility>
+		<stopFacility id="VS0071" x="941063.3548994833" y="1912491.1710358171" linkRefId="car_1380" name="Unknown Road (westbound)" isBlocking="false">
+			<attributes>
+				<attribute name="accessibility_note" class="java.lang.String">Directly generated from drive network</attribute>
+				<attribute name="mapping_distance_m" class="java.lang.Double">11.988648228291282</attribute>
+				<attribute name="pair_id" class="java.lang.String">P0036</attribute>
+				<attribute name="road_direction" class="java.lang.String">westbound</attribute>
+				<attribute name="side_of_road" class="java.lang.String">north</attribute>
+			</attributes>
+
+		</stopFacility>
+		<stopFacility id="VS0072" x="941051.4520986166" y="1912470.3652822825" linkRefId="car_1572" name="Unknown Road (westbound)" isBlocking="false">
+			<attributes>
+				<attribute name="accessibility_note" class="java.lang.String">Directly generated from drive network</attribute>
+				<attribute name="mapping_distance_m" class="java.lang.Double">10.200996986448533</attribute>
+				<attribute name="pair_id" class="java.lang.String">P0036</attribute>
+				<attribute name="road_direction" class="java.lang.String">westbound</attribute>
+				<attribute name="side_of_road" class="java.lang.String">south</attribute>
+			</attributes>
+
+		</stopFacility>
+		<stopFacility id="VS0073" x="941163.9979396687" y="1912360.8941183444" linkRefId="car_1396" name="Unknown Road (northbound)" isBlocking="false">
+			<attributes>
+				<attribute name="accessibility_note" class="java.lang.String">Directly generated from drive network</attribute>
+				<attribute name="mapping_distance_m" class="java.lang.Double">12.020406887555874</attribute>
+				<attribute name="pair_id" class="java.lang.String">P0037</attribute>
+				<attribute name="road_direction" class="java.lang.String">northbound</attribute>
+				<attribute name="side_of_road" class="java.lang.String">east</attribute>
+			</attributes>
+
+		</stopFacility>
+		<stopFacility id="VS0074" x="941141.0468305532" y="1912353.7468534436" linkRefId="car_1588" name="Unknown Road (northbound)" isBlocking="false">
+			<attributes>
+				<attribute name="accessibility_note" class="java.lang.String">Directly generated from drive network</attribute>
+				<attribute name="mapping_distance_m" class="java.lang.Double">10.206960756725827</attribute>
+				<attribute name="pair_id" class="java.lang.String">P0037</attribute>
+				<attribute name="road_direction" class="java.lang.String">northbound</attribute>
+				<attribute name="side_of_road" class="java.lang.String">west</attribute>
+			</attributes>
+
+		</stopFacility>
+		<stopFacility id="VS0075" x="941205.5974682008" y="1912216.4758451968" linkRefId="car_1411" name="Unknown Road (northbound)" isBlocking="false">
+			<attributes>
+				<attribute name="accessibility_note" class="java.lang.String">Directly generated from drive network</attribute>
+				<attribute name="mapping_distance_m" class="java.lang.Double">12.02112897775278</attribute>
+				<attribute name="pair_id" class="java.lang.String">P0038</attribute>
+				<attribute name="road_direction" class="java.lang.String">northbound</attribute>
+				<attribute name="side_of_road" class="java.lang.String">east</attribute>
+			</attributes>
+
+		</stopFacility>
+		<stopFacility id="VS0076" x="941182.4435863736" y="1912210.0093525485" linkRefId="car_1603" name="Unknown Road (northbound)" isBlocking="false">
+			<attributes>
+				<attribute name="accessibility_note" class="java.lang.String">Directly generated from drive network</attribute>
+				<attribute name="mapping_distance_m" class="java.lang.Double">10.229661492046409</attribute>
+				<attribute name="pair_id" class="java.lang.String">P0038</attribute>
+				<attribute name="road_direction" class="java.lang.String">northbound</attribute>
+				<attribute name="side_of_road" class="java.lang.String">west</attribute>
+			</attributes>
+
+		</stopFacility>
+		<stopFacility id="VS0077" x="941248.8376697655" y="1912073.3099174546" linkRefId="car_1426" name="Unknown Road (northbound)" isBlocking="false">
+			<attributes>
+				<attribute name="accessibility_note" class="java.lang.String">Directly generated from drive network</attribute>
+				<attribute name="mapping_distance_m" class="java.lang.Double">12.020379572632683</attribute>
+				<attribute name="pair_id" class="java.lang.String">P0039</attribute>
+				<attribute name="road_direction" class="java.lang.String">northbound</attribute>
+				<attribute name="side_of_road" class="java.lang.String">east</attribute>
+			</attributes>
+
+		</stopFacility>
+		<stopFacility id="VS0078" x="941225.8932592673" y="1912066.1413848868" linkRefId="car_1618" name="Unknown Road (northbound)" isBlocking="false">
+			<attributes>
+				<attribute name="accessibility_note" class="java.lang.String">Directly generated from drive network</attribute>
+				<attribute name="mapping_distance_m" class="java.lang.Double">10.210794071169325</attribute>
+				<attribute name="pair_id" class="java.lang.String">P0039</attribute>
+				<attribute name="road_direction" class="java.lang.String">northbound</attribute>
+				<attribute name="side_of_road" class="java.lang.String">west</attribute>
+			</attributes>
+
+		</stopFacility>
+		<stopFacility id="VS0079" x="941318.8384040206" y="1911938.8964975446" linkRefId="car_1442" name="Unknown Road (westbound)" isBlocking="false">
+			<attributes>
+				<attribute name="accessibility_note" class="java.lang.String">Directly generated from drive network</attribute>
+				<attribute name="mapping_distance_m" class="java.lang.Double">11.999649066888969</attribute>
+				<attribute name="pair_id" class="java.lang.String">P0040</attribute>
+				<attribute name="road_direction" class="java.lang.String">westbound</attribute>
+				<attribute name="side_of_road" class="java.lang.String">north</attribute>
+			</attributes>
+
+		</stopFacility>
+		<stopFacility id="VS0080" x="941302.3034137541" y="1911921.5107724671" linkRefId="car_1634" name="Unknown Road (westbound)" isBlocking="false">
+			<attributes>
+				<attribute name="accessibility_note" class="java.lang.String">Directly generated from drive network</attribute>
+				<attribute name="mapping_distance_m" class="java.lang.Double">10.066935943202022</attribute>
+				<attribute name="pair_id" class="java.lang.String">P0040</attribute>
+				<attribute name="road_direction" class="java.lang.String">westbound</attribute>
+				<attribute name="side_of_road" class="java.lang.String">south</attribute>
+			</attributes>
+
+		</stopFacility>
+		<stopFacility id="VS0081" x="941458.2241758441" y="1911886.8360158785" linkRefId="car_1458" name="Unknown Road (westbound)" isBlocking="false">
+			<attributes>
+				<attribute name="accessibility_note" class="java.lang.String">Directly generated from drive network</attribute>
+				<attribute name="mapping_distance_m" class="java.lang.Double">11.977229747790368</attribute>
+				<attribute name="pair_id" class="java.lang.String">P0041</attribute>
+				<attribute name="road_direction" class="java.lang.String">westbound</attribute>
+				<attribute name="side_of_road" class="java.lang.String">north</attribute>
+			</attributes>
+
+		</stopFacility>
+		<stopFacility id="VS0082" x="941456.1631320807" y="1911862.9788841503" linkRefId="car_1650" name="Unknown Road (westbound)" isBlocking="false">
+			<attributes>
+				<attribute name="accessibility_note" class="java.lang.String">Directly generated from drive network</attribute>
+				<attribute name="mapping_distance_m" class="java.lang.Double">10.742721079783717</attribute>
+				<attribute name="pair_id" class="java.lang.String">P0041</attribute>
+				<attribute name="road_direction" class="java.lang.String">westbound</attribute>
+				<attribute name="side_of_road" class="java.lang.String">south</attribute>
+			</attributes>
+
+		</stopFacility>
+		<stopFacility id="VS0083" x="941601.6214569618" y="1911808.9487179169" linkRefId="car_1474" name="Unknown Road (northbound)" isBlocking="false">
+			<attributes>
+				<attribute name="accessibility_note" class="java.lang.String">Directly generated from drive network</attribute>
+				<attribute name="mapping_distance_m" class="java.lang.Double">12.00844266552408</attribute>
+				<attribute name="pair_id" class="java.lang.String">P0042</attribute>
+				<attribute name="road_direction" class="java.lang.String">northbound</attribute>
+				<attribute name="side_of_road" class="java.lang.String">east</attribute>
+			</attributes>
+
+		</stopFacility>
+		<stopFacility id="VS0084" x="941582.1455974828" y="1911794.9037486436" linkRefId="car_1666" name="Unknown Road (northbound)" isBlocking="false">
+			<attributes>
+				<attribute name="accessibility_note" class="java.lang.String">Directly generated from drive network</attribute>
+				<attribute name="mapping_distance_m" class="java.lang.Double">10.07054501236797</attribute>
+				<attribute name="pair_id" class="java.lang.String">P0042</attribute>
+				<attribute name="road_direction" class="java.lang.String">northbound</attribute>
+				<attribute name="side_of_road" class="java.lang.String">west</attribute>
+			</attributes>
+
+		</stopFacility>
+	</transitStops>
+</transitSchedule>

@@ -20,3 +20,5 @@ hs_err_pid*
 /.idea/
 *.iml
 /matsim-maas-master-SNAPSHOT.jar
+
+lib/*

@@ -45,7 +45,7 @@ public class RunStopBasedDrtExample {
 	}
 
 	public static void main(String[] args) {
-		Config config = ConfigUtils.loadConfig("scenarios/cottbus/drtconfig_stopbased.xml",
+		Config config = ConfigUtils.loadConfig("data/baseline_config.xml",
 				new MultiModeDrtConfigGroup(), new DvrpConfigGroup(), new OTFVisConfigGroup());
 		run(config, false);
 	}
