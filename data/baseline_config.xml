@@ -14,7 +14,7 @@
 	</module>
 
 	<module name="plans">
-		<param name="inputPlansFile" value="populations/base_trip1.0_rule1_population.xml.gz" />
+		<param name="inputPlansFile" value="populations/base_trip1.0_rule1_real_time_population.xml.gz" />
 	</module>
 
 	<module name="otfvis">
@@ -47,7 +47,7 @@
 	</module>
 
 	<module name="controller">
-		<param name="lastIteration" value="0" />
+		<param name="lastIteration" value="49" />
 		<param name="outputDirectory" value="output/baseline" />
 		<param name="overwriteFiles" value="deleteDirectoryIfExists" />
 		<param name="runId" value="baseline" />

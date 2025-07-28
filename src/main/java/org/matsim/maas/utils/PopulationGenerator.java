@@ -1,5 +1,7 @@
 package org.matsim.maas.utils;
 
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 import org.matsim.api.core.v01.Coord;
 import org.matsim.api.core.v01.Id;
 import org.matsim.api.core.v01.TransportMode;
@@ -14,26 +16,41 @@ import org.matsim.core.utils.geometry.CoordUtils;
 import java.io.BufferedReader;
 import java.io.FileReader;
 import java.io.IOException;
+import java.nio.file.Path;
 import java.util.*;
+import java.util.List;
 
 /**
- * Utility class to generate MATSim population files from O/D demand matrices.
+ * Utility class to generate MATSim population files from O/D demand matrices and real-time demand data.
  * Converts CSV-based demand data to MATSim-compatible population XML files.
+ * Supports both traditional O/D matrices and real-time demand requests with coordinate transformations.
  */
 public class PopulationGenerator {
 
+    private static final Logger log = LogManager.getLogger(PopulationGenerator.class);
     private static final String NETWORK_FILE = "data/networks/hwaseong_network.xml";
     private static final String ZONE_CENTROIDS_FILE = "data/candidate_stops/hwaseong/stops.csv";
     private static final Random random = new Random(42);
 
+    // Activity types
+    private static final String HOME_ACTIVITY = "home";
+    private static final String WORK_ACTIVITY = "work";
+    
+    // Default activity durations
+    private static final double HOME_DURATION = 8 * 3600; // 8 hours
+    private static final double TRIP_DURATION = 1 * 3600;  // 1 hour
+
     private Network network;
     private Map<Integer, Coord> zoneCentroids;
     private PopulationFactory populationFactory;
+    private Population population;
 
     public PopulationGenerator() {
         loadNetwork();
         loadZoneCentroids();
-        this.populationFactory = ScenarioUtils.createScenario(ConfigUtils.createConfig()).getPopulation().getFactory();
+        var scenario = ScenarioUtils.createScenario(ConfigUtils.createConfig());
+        this.population = scenario.getPopulation();
+        this.populationFactory = population.getFactory();
     }
 
     private void loadNetwork() {
@@ -212,6 +229,217 @@ public class PopulationGenerator {
         
         return new Coord(coord.getX() + deltaX, coord.getY() + deltaY);
     }
+
+    // ========================================================================================
+    // NEW METHODS FOR REAL-TIME DEMAND PROCESSING
+    // ========================================================================================
+
+    /**
+     * Generate a MATSim population from real-time demand requests.
+     * 
+     * @param demandRequests List of demand requests
+     * @param scenarioName Name of the scenario (for person ID prefixes)
+     * @return Generated Population object
+     */
+    public Population generatePopulationFromRequests(List<DemandRequest> demandRequests, String scenarioName) {
+        log.info("Generating population for scenario '{}' with {} demand requests", 
+                scenarioName, demandRequests.size());
+        
+        population.getPersons().clear(); // Clear any existing persons
+        
+        for (DemandRequest request : demandRequests) {
+            Person person = createPersonFromRequest(request, scenarioName);
+            population.addPerson(person);
+        }
+        
+        log.info("Generated population with {} persons", population.getPersons().size());
+        return population;
+    }
+
+    /**
+     * Create a MATSim person from a demand request.
+     */
+    private Person createPersonFromRequest(DemandRequest request, String scenarioName) {
+        // Create unique person ID
+        String personId = String.format("%s_person_%d", scenarioName, request.getIdx());
+        Person person = populationFactory.createPerson(Id.createPersonId(personId));
+        
+        // Create plan
+        Plan plan = populationFactory.createPlan();
+        
+        // Add activities and legs to the plan
+        addActivitiesAndLegsFromRequest(plan, request);
+        
+        // Add person attributes
+        addPersonAttributesFromRequest(person, request);
+        
+        person.addPlan(plan);
+        person.setSelectedPlan(plan);
+        
+        return person;
+    }
+
+    /**
+     * Add activities and legs to a person's plan based on the demand request.
+     */
+    private void addActivitiesAndLegsFromRequest(Plan plan, DemandRequest request) {
+        // Find closest network links to origin and destination
+        org.matsim.api.core.v01.network.Link originLink = findClosestLink(request.getOriginProjected());
+        org.matsim.api.core.v01.network.Link destLink = findClosestLink(request.getDestinationProjected());
+        
+        // Start with home activity at origin
+        Activity homeActivity = populationFactory.createActivityFromLinkId(HOME_ACTIVITY, originLink.getId());
+        homeActivity.setCoord(request.getOriginProjected());
+        
+        // Set end time based on request departure time
+        double departureTime = request.getDepartureTimeSeconds();
+        homeActivity.setEndTime(departureTime);
+        plan.addActivity(homeActivity);
+        
+        // Add leg for the trip (using DRT mode)
+        Leg leg = populationFactory.createLeg(TransportMode.drt);
+        plan.addLeg(leg);
+        
+        // Add destination activity 
+        Activity destinationActivity = populationFactory.createActivityFromLinkId(WORK_ACTIVITY, destLink.getId());
+        destinationActivity.setCoord(request.getDestinationProjected());
+        destinationActivity.setStartTime(departureTime + 600); // Assume 10 min travel time minimum
+        destinationActivity.setEndTime(departureTime + TRIP_DURATION);
+        plan.addActivity(destinationActivity);
+        
+        // Add return leg (optional, for complete round trip)
+        Leg returnLeg = populationFactory.createLeg(TransportMode.drt);
+        plan.addLeg(returnLeg);
+        
+        // Return home activity
+        Activity returnHomeActivity = populationFactory.createActivityFromLinkId(HOME_ACTIVITY, originLink.getId());
+        returnHomeActivity.setCoord(request.getOriginProjected());
+        returnHomeActivity.setStartTime(departureTime + TRIP_DURATION + 600);
+        plan.addActivity(returnHomeActivity);
+    }
+
+    /**
+     * Find the closest network link to a coordinate.
+     */
+    private org.matsim.api.core.v01.network.Link findClosestLink(Coord coord) {
+        org.matsim.api.core.v01.network.Link closestLink = network.getLinks().values().iterator().next();
+        double minDistance = Double.MAX_VALUE;
+        
+        for (org.matsim.api.core.v01.network.Link link : network.getLinks().values()) {
+            double distance = CoordUtils.calcEuclideanDistance(coord, link.getCoord());
+            if (distance < minDistance) {
+                minDistance = distance;
+                closestLink = link;
+            }
+        }
+        
+        return closestLink;
+    }
+
+    /**
+     * Add person attributes based on demand request properties.
+     */
+    private void addPersonAttributesFromRequest(Person person, DemandRequest request) {
+        // Add custom attributes that might be useful for analysis
+        person.getAttributes().putAttribute("original_request_idx", request.getIdx());
+        person.getAttributes().putAttribute("origin_zone", request.getOriginZone());
+        person.getAttributes().putAttribute("destination_zone", request.getDestinationZone());
+        person.getAttributes().putAttribute("request_hour", request.getHour());
+        person.getAttributes().putAttribute("origin_h3", request.getOriginH3());
+        person.getAttributes().putAttribute("destination_h3", request.getDestinationH3());
+    }
+
+    /**
+     * Create a simplified population with only one-way trips (no return).
+     * Useful for DRT analysis where return trips are not needed.
+     */
+    public Population generateSimplifiedPopulation(List<DemandRequest> demandRequests, String scenarioName) {
+        log.info("Generating simplified population for scenario '{}' with {} demand requests", 
+                scenarioName, demandRequests.size());
+        
+        population.getPersons().clear();
+        
+        for (DemandRequest request : demandRequests) {
+            Person person = createSimplifiedPersonFromRequest(request, scenarioName);
+            population.addPerson(person);
+        }
+        
+        log.info("Generated simplified population with {} persons", population.getPersons().size());
+        return population;
+    }
+
+    /**
+     * Create a person with simplified plan (one-way trip only).
+     */
+    private Person createSimplifiedPersonFromRequest(DemandRequest request, String scenarioName) {
+        String personId = String.format("%s_person_%d", scenarioName, request.getIdx());
+        Person person = populationFactory.createPerson(Id.createPersonId(personId));
+        
+        Plan plan = populationFactory.createPlan();
+        
+        // Find closest network links
+        org.matsim.api.core.v01.network.Link originLink = findClosestLink(request.getOriginProjected());
+        org.matsim.api.core.v01.network.Link destLink = findClosestLink(request.getDestinationProjected());
+        
+        // Origin activity
+        Activity originActivity = populationFactory.createActivityFromLinkId(HOME_ACTIVITY, originLink.getId());
+        originActivity.setCoord(request.getOriginProjected());
+        originActivity.setEndTime(request.getDepartureTimeSeconds());
+        plan.addActivity(originActivity);
+        
+        // Trip leg
+        Leg leg = populationFactory.createLeg(TransportMode.drt);
+        plan.addLeg(leg);
+        
+        // Destination activity (open-ended)
+        Activity destinationActivity = populationFactory.createActivityFromLinkId(WORK_ACTIVITY, destLink.getId());
+        destinationActivity.setCoord(request.getDestinationProjected());
+        plan.addActivity(destinationActivity);
+        
+        // Add attributes
+        addPersonAttributesFromRequest(person, request);
+        
+        person.addPlan(plan);
+        person.setSelectedPlan(plan);
+        
+        return person;
+    }
+
+    /**
+     * Write population to XML file.
+     * 
+     * @param population Population to write
+     * @param outputPath Path for the output XML file
+     * @throws IOException If file cannot be written
+     */
+    public void writePopulation(Population population, Path outputPath) throws IOException {
+        log.info("Writing population to: {}", outputPath);
+        
+        PopulationWriter writer = new PopulationWriter(population);
+        writer.write(outputPath.toString());
+        
+        log.info("Successfully wrote population with {} persons to {}", 
+                population.getPersons().size(), outputPath);
+    }
+
+    /**
+     * Generate and write population file directly from demand requests.
+     * 
+     * @param demandRequests List of demand requests
+     * @param scenarioName Scenario name
+     * @param outputPath Output file path
+     * @throws IOException If file cannot be written
+     */
+    public void generateAndWritePopulation(List<DemandRequest> demandRequests, 
+                                          String scenarioName, 
+                                          Path outputPath) throws IOException {
+        Population pop = generatePopulationFromRequests(demandRequests, scenarioName);
+        writePopulation(pop, outputPath);
+    }
+
+    // ========================================================================================
+    // ORIGINAL METHODS FOR O/D MATRIX PROCESSING (PRESERVED)
+    // ========================================================================================
 
     /**
      * Generate all population variants for the experiment

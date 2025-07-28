@@ -64,11 +64,6 @@ public class RunPreferenceAwareDrt {
         
         // Fix population file path if needed
         String currentPopFile = config.plans().getInputFile();
-        if (currentPopFile != null && currentPopFile.contains("base_population_NEW.xml.gz")) {
-            String fixedPopFile = "populations/base_trip1.0_rule1_population.xml.gz";
-            config.plans().setInputFile(fixedPopFile);
-            System.out.println("🔧 Fixed population file from " + currentPopFile + " to " + fixedPopFile);
-        }
         
         // Creates a MATSim Controler and preloads all DRT related packages
         System.out.println("🚀 Creating DRT controler...");
@@ -117,10 +112,8 @@ public class RunPreferenceAwareDrt {
         Config config = ConfigUtils.loadConfig(configPath,
                 new MultiModeDrtConfigGroup(), new DvrpConfigGroup(), new OTFVisConfigGroup());
         
-        // Use an existing population file for testing (relative to data/ directory)
-        String populationFile = "populations/base_trip1.0_rule1_population.xml.gz";
-        config.plans().setInputFile(populationFile);
-        System.out.println("👥 Using population file: " + populationFile);
+        // Use the population file specified in the config
+        System.out.println("👥 Using population file: " + config.plans().getInputFile());
         
         // Test with preference-aware mode
         System.out.println("\n--- Testing preference-aware DRT ---");
